@@ -1,0 +1,283 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #132743;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 30px 30px;
+  padding: 40px 40px 15px;
+  width: 900px;
+  height: fit-content;
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 221, 225) 11.2%,
+    rgb(255, 255, 255) 92.2%
+  );
+  border-radius: 20px;
+}
+/* upper section */
+.card-body {
+  padding: 10px;
+}
+
+.current-location-card {
+  border: none;
+  background-color: transparent;
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 9px 3px rgba(23, 21, 23, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+}
+/* search input field */
+.search {
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.input-group .form-control {
+  flex: 1;
+  margin-right: 0;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.search-button {
+  height: 32px;
+  font-size: 12px;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+/* location button*/
+.location {
+  height: 30px;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: 0;
+}
+/* main content.firs section */
+
+.data-box {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #f0f0f0;
+  padding: 20px 10px 40px;
+  margin: 25px 0 60px 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+.conditions {
+  margin-left: 25px;
+  top: 10px;
+}
+
+.more-info {
+  height: 30px;
+  font-size: 12px;
+  color: rgb(230, 113, 219);
+  border-color: rgb(230, 113, 219);
+  left: -10px;
+}
+
+.more-info:hover {
+  border-color: white;
+  background-color: rgb(230, 113, 219);
+  box-shadow: 0px 0px 4px 3px rgba(230, 113, 219, 0.2);
+}
+
+.icon-moreinfo {
+  float: right;
+  justify-content: end;
+  font-size: 70px;
+  color: #132743;
+  opacity: 0.9;
+  padding-right: 25px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.main-section .condition p {
+  text-align: right;
+  font-size: medium;
+  float: right;
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+.properties {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.properties .btn {
+  margin-right: 25px;
+  margin-left: 0;
+}
+
+.properties .condition {
+  padding-right: 35px;
+  text-align: left;
+}
+
+/* main section. middle */
+.main-section .degrees {
+  margin: 25px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.degrees {
+  display: inline-block;
+  box-shadow: 0px 0px 4px 3px rgba(230, 113, 219, 0.2);
+  border-radius: 10px;
+}
+
+.degrees p {
+  display: inline;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #132743;
+  transform: scaleY(1.8);
+  -webkit-transform: scaleY(1.8);
+  padding: 50px 5px;
+}
+
+.celsius-degrees {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+/* Add custom class to the temperature links */
+.temperature-links {
+  display: inline;
+  cursor: pointer;
+  color: blue; /* Change the color as desired */
+}
+
+/* Add some margin to the temperature links for spacing */
+.temperature-links a {
+  margin: 0 5px;
+}
+
+/* Add hover effect to the temperature links */
+.temperature-links a:hover {
+  text-decoration: underline;
+}
+
+/* main section. list */
+.city-list {
+  background-color: transparent;
+  margin: 10px auto;
+  padding: 10px 7px 25px 15px;
+}
+
+.city-list .list-group-item {
+  text-align: left;
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: transparent;
+  border-color: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+  padding: 12px 0;
+}
+
+.city-list a {
+  color: rgb(230, 113, 219);
+}
+/* bottom section */
+.bottom-section {
+  position: relative;
+  margin: 0 80px;
+}
+
+.bottom-section .weather {
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.bottom-section.col {
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 4px 3px rgba(230, 113, 219, 0.2);
+  background: linear-gradient(
+    102.6deg,
+    rgb(255, 221, 225) 5.2%,
+    rgb(255, 255, 255) 50.2%
+  );
+}
+
+.bottom-section .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.card-text {
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.temperature {
+  font-size: 24px;
+}
+
+.bottom-section .card-icon {
+  font-size: 60px;
+  color: #132743;
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: smaller;
+}
